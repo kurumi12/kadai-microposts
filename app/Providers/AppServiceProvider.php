@@ -11,9 +11,9 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+        public function boot()
     {
-        //
+        \Schema::defaultStringLength(191);
     }
 
     /**
@@ -22,6 +22,7 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function register()
+    
     {
         //
     }
